@@ -22,31 +22,26 @@ sudo apt install virtualenv
 ```
 <br>
 
-- Tee python venv (virtual environment):
+#### Tee python venv (virtual environment):
 ```
 python3 -m virtualenv venv
 ```
 <br>
 
-- Aktivoi virtualenv:
+#### Aktivoi virtualenv:
 ```
 source venv/bin/activate 
 ```
 
-> Virtualenv luo erillisen Python-ympäristön, jossa projektin omat kirjastot pysyvät erillään muista projekteista
->
-> Kaikki python depsut asennetaan lokaalisti .venv kansioon 
 <br>
 
-- Asenna python depsut:
+#### Asenna python depsut:
 ```
 pip install -r requirements.txt 
 ```
 <br>
 
-- [Lataa data täältä](https://extranet.vayla.fi/wiki/pages/viewpage.action?pageId=221891359), heitä se root directoryyn
-
-  Pitäisi näyttää tältä:
+#### [Lataa data täältä](https://extranet.vayla.fi/wiki/pages/viewpage.action?pageId=221891359), heitä se root directoryyn, pitäisi näyttää tältä:
 ```
 harja-roles/
 ├── data/
