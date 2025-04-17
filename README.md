@@ -4,8 +4,8 @@ roles parser
 <br>
 
 ## Requirements 
-- [Python & Pip](https://github.com/solita-staskila/harja-roles/edit/main/README.md#ajo-linuxmac) 
-- [wkhtmltopdf](https://github.com/solita-staskila/harja-roles/edit/main/README.md#ajo-linuxmac)
+- [Python & Pip](https://github.com/solita-staskila/harja-roles?tab=readme-ov-file#ajo-linuxmac) 
+- [wkhtmltopdf](https://github.com/solita-staskila/harja-roles?tab=readme-ov-file#ajo-linuxmac)
 
 <br>
 
