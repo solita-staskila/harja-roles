@@ -1,7 +1,10 @@
+import os
 import sys
 import pdfkit
 import platform
+import platform
 import pandas as pd
+
 from collections import defaultdict
 
 import __html as h
@@ -22,9 +25,19 @@ class ReportGenerator:
             ctypes.windll.kernel32.SetConsoleTitleW(self.title)
             self.wkhtml_path = r"C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe"
 
-        elif platform.system() == "Linux":
+        else:
             sys.stdout.write(f'\x1b]0;{self.title}\x07')
-            self.wkhtml_path = "/usr/local/bin/wkhtmltopdf"
+
+            path_1 = "/usr/bin/wkhtmltopdf"
+            path_2 = "/usr/local/bin/wkhtmltopdf"
+
+            if os.path.isfile(path_1):
+                self.wkhtml_path = path_1
+            elif os.path.isfile(path_2):
+                self.wkhtml_path = path_2
+            else:
+                print("\n Error: wkhtmltopdf not found in standard locations.")
+                sys.exit(1)
 
         with open("resources/__c.css", "r") as css_file:
             self.custom_css = f"<style>\n{css_file.read()}\n</style>"
@@ -150,7 +163,7 @@ class ReportGenerator:
                         cName = '[organisaatio rooli, ei urakkaa]'
                     elif base_role in sopimus_roles:
                         cName = '[sopimustason rooli, ei urakkaa]'
-                    else: 
+                    else:
                         cName = '[päättynyt]'
 
                 data_rows.append([cid, cName, cnt])
