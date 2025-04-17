@@ -1,0 +1,6 @@
+files:
+    kaynnissa: 'data/kaynnissa_olevat.csv'
+    paattyneet: 'data/paattyneet_urakat.csv'
+    roolit: 'data/Harja_groups_members.csv'
+    korjaus_urakat: 'data/korjaukset.csv'
+    urakka_nimet: 'data/urakkanimet.csv'

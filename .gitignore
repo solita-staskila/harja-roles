@@ -1,3 +1,20 @@
+# Python environment 
+__pycache__/
+venv/
+
+# Generated during runtime 
+report.html
+report.pdf
+
+# Resources, generated during runtime
+resources/Käyttäjäroolit.png
+
+# Data, includes sensitive information 
+data/
+
+# Preferences
+# prefs.yml
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

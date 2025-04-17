@@ -1,0 +1,63 @@
+body {
+  padding: 5%;
+  font-family: sans-serif;
+}
+
+table {
+    font-size: 1em;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: black;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.bar {
+    background-color: lightgreen;
+    height: 1em;
+    display: inline-block;
+}
+
+.progress-container {
+    position: relative;
+    width: 100%;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    height: 1.5em;
+}
+
+.progress-bar {
+    background-color: lightgreen;
+    height: 100%;
+}
+
+.progress-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1em;
+    color: black;
+    line-height: 1.5em;
+}
